@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    tools:context="com.example.a51006705.senddatafromchildactivity.MainActivity">
+
+    <EditText
+        android:id="@+id/edit_text_number1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number 1"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edit_text_number2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text_number1"
+        android:layout_marginTop="8dp"
+        android:hint="Number 2"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/text_view_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_number2"
+        android:layout_marginTop="10dp"
+        android:text="Result"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button_open_activity2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_result"
+        android:layout_marginTop="12dp"
+        android:text="Open Activity2"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="20dp" />
+</RelativeLayout>
